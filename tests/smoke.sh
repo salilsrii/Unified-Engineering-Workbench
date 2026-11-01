@@ -30,5 +30,11 @@ if "$BIN" validate csv "$badcsv" >/dev/null 2>&1; then
   echo 'invalid CSV unexpectedly accepted' >&2
   exit 1
 fi
+badstl="${TMPDIR:-/tmp}/pass-workbench-bad.stl"
+printf 'solid bad\nvertex 0 0 nope\nendsolid bad\n' > "$badstl"
+if "$BIN" validate stl "$badstl" >/dev/null 2>&1; then
+  echo 'invalid STL unexpectedly accepted' >&2
+  exit 1
+fi
 "$BIN" hardware | grep -q SIMULATED
 echo 'SMOKE CHECKS PASS'

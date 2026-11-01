@@ -40,7 +40,7 @@ Run `tests/smoke.sh` to compile and check FEM convergence, gradient agreement, C
 
 ## Windows build (not a verified standalone package)
 
-Install Visual Studio Build Tools with the C++ workload and CMake, then run `build_windows.ps1`. `Launch.bat` builds if needed and starts the local service. This project does **not** currently contain a verified dependency-free `Launch.exe`; do not represent it as satisfying the standalone Windows gate until packaged and tested on Windows 11.
+On Windows, install Visual Studio Build Tools with the C++ workload and CMake, then run `build_windows.ps1` or `Launch.bat`. The build script statically links the MSVC runtime and copies the executable to `Launch.exe`; the executable changes to its own folder, starts the local service and opens the dashboard. This project does **not** currently contain a built or verified `Launch.exe`; do not represent it as satisfying the standalone Windows gate until packaged and tested on Windows 11. Keep `frontend/` and `data/` beside the executable.
 
 ## Thermal formulation
 
