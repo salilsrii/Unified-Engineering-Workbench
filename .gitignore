@@ -1,0 +1,5 @@
+/build/
+/build-*/
+/PASS_Workbench.bundle
+*.user
+.DS_Store

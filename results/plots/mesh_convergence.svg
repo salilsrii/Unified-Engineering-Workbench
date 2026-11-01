@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="480" viewBox="0 0 900 480">
+<rect width="100%" height="100%" fill="#0b1420"/>
+<text x="450.0" y="34" fill="#e6edf4" text-anchor="middle" font-family="Arial" font-size="22">Mesh convergence at element midpoints</text>
+<path d="M85,65 V410 H870" fill="none" stroke="#93a8b7"/>
+<polyline points="85.0,65.0 197.1,180.0 421.4,295.0 870.0,410.0" fill="none" stroke="#ed9c42" stroke-width="3"/>
+<text x="85" y="464" fill="#ed9c42" font-family="Arial" font-size="14">FEM error</text>
+<text x="450.0" y="438" fill="#c8d4df" text-anchor="middle" font-family="Arial" font-size="15">Number of elements</text>
+<text transform="translate(22 240.0) rotate(-90)" fill="#c8d4df" text-anchor="middle" font-family="Arial" font-size="15">Maximum absolute error (°C)</text>
+</svg>
