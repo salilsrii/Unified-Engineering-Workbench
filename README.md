@@ -56,4 +56,4 @@ See `docs/STATUS.md` for the assignment checklist, known gaps, and evidence. The
 
 See `AI-use-log.md`. The candidate should review and understand every file, complete the handwritten appendix themselves, and confirm ownership statements before submission.
 
-The local Git starter history and bundle will record this AI-assisted implementation with honest current timestamps; they are not earlier candidate work. Review the project and add a candidate-authored validation commit before submission.
+The local Git starter history records this AI-assisted implementation with honest current timestamps and the explicit author `Codex AI assistant`; it is not earlier candidate work. The portable repository bundle is `PASS_Workbench.bundle`. Review the project and add a candidate-authored validation commit before submission.

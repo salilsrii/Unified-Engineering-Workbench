@@ -6,7 +6,7 @@ I, **[candidate full name]**, confirm that I reviewed the PASS Unified Engineeri
 
 The example STL is a small hand-authored tetrahedron. The example temperature CSV is synthetic and is not an ANSYS export. Hardware responses are software mocks. No third-party runtime library or physical hardware behavior is represented as my own verified work.
 
-If the AI-assisted starter history is included, it must be described as a timestamped implementation record by the AI assistant, not earlier candidate-authored work. Add your own review and validation commit before submission.
+The initial local Git commit records the AI-assisted implementation under the explicit author `Codex AI assistant`; it is not presented as earlier candidate-authored work. Add your own review and validation commit before submission.
 
 **Candidate:** [full name]  
 **Date:** [date]  
