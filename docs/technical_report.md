@@ -33,4 +33,4 @@ For `h=tanh(wx+b)`, `yhat=vh+c`, and `J=1/2(yhat-y)^2`, the C++ implementation c
 
 ## Scope limits and submission risks
 
-The hardware adapters are mocks. Binary STL, quoted CSV parsing, and backend file ingestion are unsupported. The Windows standalone `Launch.exe`, Windows 11 verification, saved screenshot/video evidence, Git bundle, and handwritten appendix remain incomplete. An unsigned ownership statement draft is included. See `docs/STATUS.md` before presenting this as a finished submission.
+The hardware adapters are mocks. Binary STL, quoted CSV parsing, and HTTP file upload are unsupported; C++ CLI validators cover ASCII STL and the documented CSV schema. The Windows standalone `Launch.exe`, Windows 11 verification, saved screenshot/video evidence, and handwritten appendix remain incomplete. An unsigned ownership statement draft is included. See `docs/STATUS.md` before presenting this as a finished submission.

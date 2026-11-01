@@ -22,5 +22,13 @@ assert m and float(m.group(1)) < 1e-7
 PY
 "$BIN" thermal 80 "$ROOT/results/csv/smoke_thermal_80.csv"
 test -s "$ROOT/results/csv/smoke_thermal_80.csv"
+"$BIN" validate stl "$ROOT/data/sample.stl" | grep -q '4 triangles'
+"$BIN" validate csv "$ROOT/data/sample_temperature.csv" | grep -q '5 finite data rows'
+badcsv="${TMPDIR:-/tmp}/pass-workbench-bad.csv"
+printf 'node_id,x_m,y_m,z_m,temperature_C\n1,0,NaN,0,25\n' > "$badcsv"
+if "$BIN" validate csv "$badcsv" >/dev/null 2>&1; then
+  echo 'invalid CSV unexpectedly accepted' >&2
+  exit 1
+fi
 "$BIN" hardware | grep -q SIMULATED
 echo 'SMOKE CHECKS PASS'

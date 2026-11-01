@@ -31,6 +31,8 @@ Useful commands:
 ./build/workbench benchmark 20000 40
 ./build/workbench backprop
 ./build/workbench training results/csv/training_loss.csv
+./build/workbench validate stl data/sample.stl
+./build/workbench validate csv data/sample_temperature.csv
 ./build/workbench hardware
 ```
 
@@ -46,7 +48,7 @@ The weak form is assembled with element stiffness `k A / h [[1,-1],[-1,1]]` and 
 
 ## Imports and example data
 
-`data/sample.stl` is a hand-authored ASCII tetrahedron in metres. `data/sample_temperature.csv` is synthetic, uses metres and degrees Celsius, and is **not** an ANSYS export. The browser includes a simple canvas 3D viewer with rotation, pan, zoom, fit-to-view, temperature legend, and node inspection. Browser validation rejects malformed/non-finite input. Binary STL, quoted CSV parsing, backend file ingestion, and production-grade mesh rendering remain incomplete.
+`data/sample.stl` is a hand-authored ASCII tetrahedron in metres. `data/sample_temperature.csv` is synthetic, uses metres and degrees Celsius, and is **not** an ANSYS export. The browser includes a simple canvas 3D viewer with rotation, pan, zoom, fit-to-view, temperature legend, and node inspection. C++ CLI validators handle ASCII STL and the documented CSV schema; the browser also validates inputs. Binary STL, quoted CSV parsing, HTTP upload to the backend, and production-grade mesh rendering remain incomplete.
 
 ## Project status and honest limitations
 
